@@ -20,20 +20,20 @@ public static class CarService
       };
   }
 
-  public static Car Get()
+  public static List<Car> GetAll()
   {
 
 
-    //return car2;
+    return Cars ;
 
   }
 
-  public static Car Get2()
-  {
+  //public static Car Get2()
+  //{
 
     //return car;
 
-  }
+ // }
 
   public static void Add(Car car)
 

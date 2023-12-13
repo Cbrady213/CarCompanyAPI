@@ -20,16 +20,16 @@ public class CarsController : ControllerBase
 
     [HttpGet]
 
-    public Car GetAll() =>
+    public List<Car> GetAll() =>
 
-             CarService.Get();
+             CarService.GetAll();
 
 
-    [HttpGet("/products")]
+  //  [HttpGet("/products")]
 
-    public Car GetAll2() =>
+   // public Car GetAll2() =>
 
-    CarService.Get2();
+   // CarService.Get2();
 
 
 
