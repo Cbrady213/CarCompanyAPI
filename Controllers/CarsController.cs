@@ -20,9 +20,17 @@ public class CarsController : ControllerBase
 
    [HttpGet]
    
-   public Car GetAll()=>
-   
-        CarService.Get();
+    public Car GetAll()=>
+    
+            CarService.Get();
+
+        [HttpPost]
+
+        public void Add(Car car)
+        {
+            CarService.Add(car);
+
+        }
    
 
 }

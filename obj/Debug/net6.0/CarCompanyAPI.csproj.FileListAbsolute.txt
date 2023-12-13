@@ -30,3 +30,4 @@
 /Users/ciaranbrady/Documents/Programming/CSharpCourse/CsharpProjects/CarCompanyAPI/obj/Debug/net6.0/CarCompanyAPI.pdb
 /Users/ciaranbrady/Documents/Programming/CSharpCourse/CsharpProjects/CarCompanyAPI/obj/Debug/net6.0/CarCompanyAPI.genruntimeconfig.cache
 /Users/ciaranbrady/Documents/Programming/CSharpCourse/CsharpProjects/CarCompanyAPI/obj/Debug/net6.0/ref/CarCompanyAPI.dll
+/Users/ciaranbrady/Documents/Programming/CSharpCourse/CsharpProjects/CarCompanyAPI/obj/Debug/net6.0/CarCompanyAPI.sourcelink.json
