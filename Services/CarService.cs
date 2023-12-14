@@ -88,6 +88,25 @@ public static class CarService
 
   }
 
+
+  public static List<Car> GetCarsUnder(int price)
+  {
+
+    List<Car> priceSearch = new List<Car>();
+
+    foreach (Car car in Cars)
+    {
+      if (car.Price < price)
+      {
+        priceSearch.Add(car);
+      }
+
+
+    }
+
+    return priceSearch;
+  }
+
   public static void Add(Car car)
 
   {

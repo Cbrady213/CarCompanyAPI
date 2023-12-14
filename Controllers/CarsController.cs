@@ -41,6 +41,14 @@ public class CarsController : ControllerBase
     public List<Car> Getmake(String make)=>
 
              CarService.SearchMake(make);
+
+
+
+    //Return cars under a certian price
+
+     [HttpGet("/Cars/Search/budget")]
+
+     public List<Car> GetCarsUnder(int price)=> CarService.GetCarsUnder(price);
     
 
     
