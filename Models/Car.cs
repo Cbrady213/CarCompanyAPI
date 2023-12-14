@@ -17,5 +17,5 @@ public class Car
     public string SellerName { get; set; }
     public string SellerContact { get; set; }
 
-    // Removed VIN property
+
 }

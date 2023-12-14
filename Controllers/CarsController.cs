@@ -25,11 +25,14 @@ public class CarsController : ControllerBase
              CarService.GetAll();
 
 
-  //  [HttpGet("/products")]
+    [HttpGet("/Cars/Search")]
 
-   // public Car GetAll2() =>
+    public List<Car> GetAll2(String model)=>
 
-   // CarService.Get2();
+             CarService.SearchModel(model);
+    
+
+    
 
 
 
