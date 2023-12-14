@@ -30,28 +30,33 @@ public class CarsController : ControllerBase
 
     [HttpGet("/Cars/Search/model")]
 
-    public List<Car> GetModel(String model)=>
+    public List<Car> GetModel(String model) =>
 
              CarService.SearchModel(model);
-    
 
-   
+
+
     [HttpGet("/Cars/Search/make")]
 
-    public List<Car> Getmake(String make)=>
+    public List<Car> Getmake(String make) =>
 
              CarService.SearchMake(make);
+
+
+    [HttpGet("/Cars/Search/Condition")]
+
+    public List<Car> getCondition(String condition) => CarService.getCondition(condition);
 
 
 
     //Return cars under a certian price
 
-     [HttpGet("/Cars/Search/budget")]
+    [HttpGet("/Cars/Search/budget")]
 
-     public List<Car> GetCarsUnder(int price)=> CarService.GetCarsUnder(price);
-    
+    public List<Car> GetCarsUnder(int price) => CarService.GetCarsUnder(price);
 
-    
+
+
 
 
 

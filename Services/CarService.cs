@@ -107,13 +107,50 @@ public static class CarService
     return priceSearch;
   }
 
+  public static List<Car> getCondition(String condition)
+  {
+
+    List<Car> conditionSearch = new List<Car>();
+    string conditionCase = condition.ToLower();
+
+    if (conditionCase == "new")
+    {
+      foreach (Car car in Cars)
+      {
+        if (car.Condition == "New")
+        {
+          conditionSearch.Add(car);
+        }
+
+      
+      }
+
+
+    }
+
+    else if (conditionCase == "used")
+    {
+      foreach (Car car in Cars)
+      {
+        if (car.Condition == "Used")
+        {
+          conditionSearch.Add(car);
+        }
+      }
+    }
+
+
+
+    return conditionSearch;
+  }
+
   public static void Add(Car car)
 
   {
-      Cars.Add(car);
+    Cars.Add(car);
 
   }
-  
+
 
 }
 
