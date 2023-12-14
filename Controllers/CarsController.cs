@@ -28,15 +28,24 @@ public class CarsController : ControllerBase
     //Get Request to return all cars of a particualr Model
 
 
-    [HttpGet("/Cars/Search")]
+    [HttpGet("/Cars/Search/model")]
 
-    public List<Car> GetAll2(String model)=>
+    public List<Car> GetModel(String model)=>
 
              CarService.SearchModel(model);
     
 
+   /* 
+    [HttpGet("/Cars/Search/{make}")]
+
+    public List<Car> Getmake(String make)=>
+
+             CarService.SearchMake(make);
     
 
+    
+
+*/
 
     //Working to add addition of cars, not implemented yet!!
     [HttpPost]

@@ -69,6 +69,25 @@ public static class CarService
 
   }
 
+
+  public static List<Car> SearchMake(String make)
+  {
+
+    List<Car> makeSearch = new List<Car>();
+
+    foreach (Car car in Cars)
+    {
+      if (car.Make == make)
+      {
+        makeSearch.Add(car);
+      }
+
+
+    }
+    return makeSearch;
+
+  }
+
   public static void Add(Car car)
 
   {
