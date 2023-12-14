@@ -16,13 +16,16 @@ public class CarsController : ControllerBase
 
     }
 
-    //
+    //Get Request to return all Cars
 
     [HttpGet]
 
     public List<Car> GetAll() =>
 
              CarService.GetAll();
+
+
+    //Get Request to return all cars of a particualr Model
 
 
     [HttpGet("/Cars/Search")]
@@ -35,7 +38,7 @@ public class CarsController : ControllerBase
     
 
 
-
+    //Working to add addition of cars, not implemented yet!!
     [HttpPost]
 
     public void Add(Car car)

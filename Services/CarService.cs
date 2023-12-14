@@ -7,6 +7,7 @@ namespace CarCompanyAPI.Services;
 public static class CarService
 
 {
+  //Creation of a static list of test data,  Int in a Static Constructor 
   static List<Car> Cars;
   static CarService()
   {
@@ -64,9 +65,6 @@ public static class CarService
 
 
     }
-
-    //Car car = Cars.FirstOrDefault(m => m.Model==model);
-
     return modelSearch;
 
   }
