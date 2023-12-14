@@ -35,8 +35,8 @@ public class CarsController : ControllerBase
              CarService.SearchModel(model);
     
 
-   /* 
-    [HttpGet("/Cars/Search/{make}")]
+   
+    [HttpGet("/Cars/Search/make")]
 
     public List<Car> Getmake(String make)=>
 
@@ -45,7 +45,7 @@ public class CarsController : ControllerBase
 
     
 
-*/
+
 
     //Working to add addition of cars, not implemented yet!!
     [HttpPost]
