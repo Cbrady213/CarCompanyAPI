@@ -1,6 +1,7 @@
 using CarCompanyAPI.Models;
 using CarCompanyAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Controllers;
 using System;
 
 namespace CarCompanyAPI.Controllers;
@@ -8,20 +9,14 @@ namespace CarCompanyAPI.Controllers;
 [ApiController]
 [Route("[controller]")]
 
-public class CustomerController : ControllerBase
+public class SalesController : ControllerBase
 {
 
-    
-    public CustomerController()
-    {
-        
-
-    }
-
     [HttpGet]
-    public List<Customer> GetAll() => CustomerService.GetAll();
+    public List<Sale> GetAll()=> SalesService.GetAll();
 
-    
+
+
 
 
 
